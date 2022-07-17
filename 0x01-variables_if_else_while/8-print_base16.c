@@ -6,19 +6,15 @@
  */
 int main(void)
 {
-unsigned char a = "0";
-int i;
-for (i = 0; i < 10; i++)
-{
-putchar(a);
-a++;
-}
-a = "i";
-for (i = 0; i < 6; i++)
-{
-putchar("0" + a);
-a++;
-}
-putchar("\n");
-return (0);
+	int i;
+	
+	char jj;
+	
+	for (i = 0; i < 10; i++)
+		putchar((i % 10) + '0');
+	
+	for (jj = 'a'; jj <= 'f'; jj++)
+		putchar(jj);
+	putchar(10);
+	return (0);
 }
