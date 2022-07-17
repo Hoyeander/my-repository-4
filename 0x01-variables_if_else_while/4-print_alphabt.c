@@ -6,14 +6,15 @@
 */
 int main(void)
 {
-char a;
-for (a = 'a'; a <= 'z'; a++)
-{
-if (a == 'q' || a == 'e')
-{
-continue;
-}
-putchar (a);
-}
+	int i;
+
+	for (i = 97; i <= 122; i++)
+	{
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
+	}
+putchar (10);
 return (0);
 }
