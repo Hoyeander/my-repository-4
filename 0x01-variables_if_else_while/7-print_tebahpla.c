@@ -6,9 +6,15 @@
 */
 int main(void)
 {
-char a;
-for (a = "2"; a >= "a"; a++)
-putchar(a);
-putchar("\n");
-return (0);
+	int i;
+
+	i = 122;
+
+	while (i >= 97)
+	{
+		putchar(i);
+		i--;
+	}
+	putchar(10);
+	return (0);
 }
