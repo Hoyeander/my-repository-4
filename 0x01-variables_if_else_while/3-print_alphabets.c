@@ -6,11 +6,14 @@
 */
 int main(void)
 {
-char a;
-for (a = 'a'; a <= 'z' ; a++)
-putchar(a);
-for (a = 'a'; a <= 'z' ; a++)
-putchar(a);
-putchar ('\n');
-return (0);
+	int i;
+
+	for (i = 97; i <= 122; i++)
+		putchar(i);
+
+	for (i = 65; i <= 90; i++)
+		putchar(i);
+
+	putchar(10);
+	return (0);
 }
