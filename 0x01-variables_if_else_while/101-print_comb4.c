@@ -1,36 +1,29 @@
 #include<stdio.h>
 /**
 *main -entry point
-* Return: alway return 0
+6* Return: alway return 0
 */
 int main(void)
 {
-int i, j, k;
-for (i = 40; i < 58; i++)
-{
-for (j = i; j < 58; j++)
-{
-for (k = j; k < 58; k++)
-{
-if (i == j || j == k || i == k)
-{
-continue;
-}
-putchar(i);
-putchar(j);
-putchar(k);
-if (i == 55 && j == 56 && k == 57)
-{
-break;
-}
-else
-{
-putchar(",");
-putchar(" ");
-}
-}
-}
-}
-putchar("\n");
-return (0);
+	int i, j, z;
+
+	for (i = 0; i < 8; i++)
+	{
+		for (j = i + 1; j < 9; j++)
+		{
+			for (z = j + 1; z < 10; z++)
+			{
+				putchar((i % 10) + '0');
+				putchar((j % 10) + '0');
+				putchar((z % 10) + '0');
+
+				if (i == 7 && j == 8 && z == 9)
+					continue;
+				putchar(44);
+				putchar(32);
+			}
+		}
+	}
+	putchar(10);
+	return (0);
 }
